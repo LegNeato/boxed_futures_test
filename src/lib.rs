@@ -27,8 +27,7 @@ where
     type AdoptingPerson;
 
     /// The policy to check when a person is adopting a particular dog.
-    /// These would be the result of calling `can_adopt` on `AdoptionRule` above.
-    fn adoption_policy(
+]    fn adoption_policy(
         adopter: &Self::AdoptingPerson,
         id: &Self::Id,
     ) -> Vec<BoxFuture<'static, Result<(), AdoptionError>>>;
